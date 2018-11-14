@@ -10,7 +10,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button login;
     private Button logout;
-    private  Button read;
     private  Button write;
 
 
@@ -20,7 +19,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.login).setOnClickListener(this);
         findViewById(R.id.logout).setOnClickListener(this);
-        findViewById(R.id.read).setOnClickListener(this);
         findViewById(R.id.write).setOnClickListener(this);
     }
 
@@ -32,9 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             break;
             case R.id.logout:
                 Toast.makeText(this, "logout", Toast.LENGTH_SHORT).show();
-            break;
-            case R.id.read:
-                Toast.makeText(this, "read", Toast.LENGTH_SHORT).show();
             break;
             case R.id.write:
                 Toast.makeText(this, "write", Toast.LENGTH_SHORT).show();
